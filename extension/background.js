@@ -97,6 +97,9 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
         message: `Click to open ${onion_domain}.`,
       });
     }
+    else {
+      chrome.notifications.clear(`${tabId}`);
+    }
   }
 });
 
