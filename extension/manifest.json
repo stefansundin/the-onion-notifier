@@ -1,0 +1,25 @@
+{
+  "name": "The Onion Notifier",
+  "version": "0.1.0",
+  "description": "Notify you when you visit a website that offer an .onion domain. Only intended for use with the Tor Browser.",
+  "homepage_url": "https://github.com/stefansundin/the-onion-notifier",
+  "author": "Stefan Sundin",
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs",
+    "notifications"
+  ],
+  "applications": {
+    "gecko": {
+      "id": "the-tor-notifier@firefox.stefansundin.com"
+    }
+  },
+  "manifest_version": 2
+}
