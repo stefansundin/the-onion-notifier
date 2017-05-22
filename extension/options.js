@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
       setTimeout(function() {
         status.textContent = "";
       }, 5000);
+      chrome.runtime.sendMessage({ action: "load-options" });
     });
   });
 });

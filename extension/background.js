@@ -71,6 +71,12 @@ themusicbay.org    uj3wazyk5u4hnvtk.onion
 
 load_options();
 
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+  if (message.action == "load-options") {
+    load_options();
+  }
+});
+
 function extract_domain(url) {
   var prot_index = url.indexOf("://");
   if (prot_index == -1) return;
